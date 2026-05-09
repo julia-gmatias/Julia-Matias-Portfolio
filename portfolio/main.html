@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Júlia Matias - Portfólio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        section, div[id] {
+            scroll-margin-top: 70px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#conversar">Contato</a>
+        </nav>
+    </div>
+
+    <div id="introducao">
+        <h1>Olá Mundo, me chamo Júlia Matias.</h1>
+        <h2>Desenvolvedora Back-end</h2>
+    </div>
+
+    <div id="sobre">
+        <h1>Sobre mim</h1>
+        <p>Sou desenvolvedora backend Java em formação, estudante de Ciência da Computação (Uninter) e Programadora de Sistemas (Senac), fluente em inglês, baseado em Jaboatão dos Guararapes/PE. Atuo com foco no desenvolvimento de APIs REST, lógica de programação e integração com banco de dados.</p>
+        <p>Tenho experiência prática com Java, Spring Boot, SQL, Git/GitHub e fundamentos de desenvolvimento backend, aplicados em projetos acadêmicos e pessoais.</p>
+        <p>Além do código, sou uma grande entusiasta de séries, filmes e músicas. Nas horas vagas, pratico tiro com arco e tenho um cachorro chamado Spock.</p>
+    </div>
+
+    <section id="formacao">
+        <h1>Formação</h1>
+        <div class="formacao-grid">
+            <div class="formacao-item">
+                <h2>Graduação</h2>
+                <ul>
+                    <li><strong>Ciência da Computação</strong><br>Uninter (2025 - 2028)</li>
+                    <li><strong>Relações Internacionais</strong><br>UNESP (2020 - 2024)</li>
+                </ul>
+            </div>
+
+            <div class="formacao-item">
+                <h2>Formação Técnica</h2>
+                <ul>
+                    <li><strong>Trilha Cloud Computing (AWS)</strong><br>Projeto Start Recife (02/2026 - 07/2026)</li>
+                    <li><strong>Programador de Sistemas</strong><br>Senac (06/2025 - 12/2025)</li>
+                </ul>
+            </div>
+
+            <div class="formacao-item">
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>Inglês - Fluente</li>
+                    <li>Espanhol - Iniciante</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div id="tecnologias">
+        <h1>Essas são as tecnologias que eu utilizo</h1>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="Logo html" width="50">  
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="Logo CSS" width="50"> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Logo JavaScript" width="50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Logo Java" width="50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Logo Python" width="50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Logo Django" width="50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Logo MySQL" width="50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Logo Git" width="50">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="Logo GitHub" width="50">
+    </div>
+
+    <section id="portfolio">
+        <h1>Meus projetos</h1>
+        <div class="container-projetos">
+            <div class="projeto-card">
+                <h2>Portfólio Pessoal</h2>
+                <p>Um portfólio construído com HTML, CSS e Javascript, desenvolvido para a disciplina de Desenvolvimento Web.</p>
+                <a href="https://github.com/seu-usuario/portfolio" class="btn-projeto" target="_blank">Ver no GitHub</a>
+            </div>
+
+            <div class="projeto-card">
+                <h2>Simbora - Projeto Integrador</h2>
+                <p>Atuação no desenvolvimento backend com Python e Django, implementando regras de negócio e integração com banco de dados.</p>
+                <a href="https://github.com/simboralab/simbora" class="btn-projeto" target="_blank">Ver no GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="conversar">
+        <h1>Vamos conversar?</h1>
+        <div class="contato-container">
+            <!-- Coluna da Esquerda: Formulário -->
+            <div class="contato-coluna contato-box">
+                <h3>Me manda uma mensagem</h3>
+                <form id="form-contato">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="contato@email.com">
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" id="btn-enviar">Enviar mensagem</button>
+                </form>
+            </div>
+
+            <!-- Coluna da Direita: Texto e Sociais -->
+            <div class="contato-coluna">
+                <div class="contato-box info-texto">
+                    <p>Estou sempre aberta a discutir novas oportunidades, projetos criativos ou parcerias. Se você tem um projeto em mente ou apenas quer conectar, adoraria conversar.</p>
+                    <ul>
+                        <li>Web & Mobile Development</li>
+                        <li>API Rest & Ecossistema Java</li>
+                        <li>Infraestrutura Cloud</li>
+                    </ul>
+                </div>
+            
+                <div class="contato-box sociais-box">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/j%C3%BAlia--gon%C3%A7alves/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" width="30"></a>
+                        <a href="https://github.com/julia-gmatias"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" width="30" style="filter: invert(1);"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2026 Júlia Matias. Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Link para o script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
